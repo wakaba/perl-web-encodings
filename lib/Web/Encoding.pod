@@ -1,0 +1,38 @@
+=head1 NAME
+
+Web::Encoding - Web Encodings APIs
+
+=head1 DESCRIPTION
+
+This module is a placeholder for Perl APIs for handling Web Encodings.
+This module is work in progress; its interface might or might not be
+changed later.
+
+=head1 SEE ALSO
+
+Web Applications 1.0:
+
+Character encodings
+<http://www.whatwg.org/specs/web-apps/current-work/complete.html#character-encodings>.
+
+UTF-8 with error handling
+<http://www.whatwg.org/specs/web-apps/current-work/complete.html#utf-8>.
+
+The HTML syntax - Character encodings
+<http://www.whatwg.org/specs/web-apps/current-work/complete.html#character-encodings-0>.
+
+Web Encodings <http://wiki.whatwg.org/wiki/Web_Encodings> or
+<http://webencodings.org/>.
+
+=head1 AUTHOR
+
+Wakaba <w@suika.fam.cx>.
+
+=head1 LICENSE
+
+Copyright 2011 Wakaba <w@suika.fam.cx>.
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself.
+
+=cut
