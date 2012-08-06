@@ -1,4 +1,4 @@
-all:
+all: pod2html
 
 ## ------ Setup ------
 
@@ -39,3 +39,14 @@ test-deps: git-submodules local-submodules pmb-install
 
 test-main:
 	$(PERL_ENV) $(PROVE) t/*.t
+
+## ------ Documents ------
+
+pod2html: lib/Web/Encoding.html
+
+POD2HTML = pod2html --css "http://suika.fam.cx/www/style/html/pod.css" \
+  --htmlroot "../.."
+SED = sed
+
+%.html: %.pod
+	$(POD2HTML) $< | $(SED) -e 's/<link rev="made" href="mailto:[^"]\+" \/>/<link rel=author href="#author">/' > $@
